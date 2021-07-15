@@ -22,7 +22,7 @@ class Course(models.Model):
 	additional_fee = fields.Float(string='Additional Fee', default=10.00)
 	total_price = fields.Float(string='Total price', readonly=True)
 	
-	sessions_id = fields.One2many(comodel_name='academy.session', inverse_name='course_id', string='Sessions')
+	session_ids = fields.One2many(comodel_name='academy.session', inverse_name='course_id', string='Sessions')
 	
 	@api.onchange('base_price','additional_fee')
 	def _onchange_total_price(self):
