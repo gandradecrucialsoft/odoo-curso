@@ -9,7 +9,7 @@
     'category' : 'Training',
     'version' : '0.0.1',
 #    'depends' : ['base'],
-    'depends' : ['sale','website'],
+    'depends' : ['sale','website','web_cohort'],
     'data' : [
         'security/academy_security.xml',
         'security/ir.model.access.csv',
