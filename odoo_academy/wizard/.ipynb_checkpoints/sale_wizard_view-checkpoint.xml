@@ -2,7 +2,7 @@
 <odoo>
     <data>
         <record model="ir.ui.view" id="academy_sale_wizard_form_view">
-            <field name="name">academy.sale.form</field>
+            <field name="name">academy.sale.wizard.form</field>
             <field name="model">academy.sale.wizard</field>
             <field name="arch" type="xml">
                 <form string="Create Sale Order for Session">
