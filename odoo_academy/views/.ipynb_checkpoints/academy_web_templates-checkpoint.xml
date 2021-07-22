@@ -37,15 +37,17 @@
                 </div>
             </t>
         </template>
-        <template id="session_template">
+        <template id="session_website">
             <t t-call="website.layout">
                 <t t-set="title">Session</t>
                 <div class="oe_structure">
                     <div class="container">
                         <h3 t-field="session.name"/>
                         <p>Last Modified:
+                            <i t-field="session.write_date" t-field-options='"format":"long"'/>
                         </p>
                         <p>Course:
+                            <t t-esc="session.course_id.name"/>
                         </p>
                         <h3>Students:</h3>
                         <ul>
