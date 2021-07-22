@@ -10,11 +10,11 @@
                         <div class="row mt32 mb32" id="session_info">
                             <div class="col-auto mw-100 mb2">
                                 <strong>Session Duration:</strong>
-                                <t i-if="doc.start_date">
+                                <t t-if="doc.start_date">
                                     <span t-field="doc.start_date"/>
                                 </t>
                                 to
-                                <t i-if="doc.end_date">
+                                <t t-if="doc.end_date">
                                     <span t-field="doc.end_date"/>
                                 </t>
                             </div>
