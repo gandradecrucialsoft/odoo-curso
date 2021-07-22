@@ -4,11 +4,11 @@
         <template id="l10n_mx_edi_addenda_test" name="Addenda Test">
             <Addenda>
                 Customer=<t t-esc="record.partner_id.name"/>
-                <Initial>
+                <Inicial>
                     <NumeroFacturaOriginal>
                         <t t-esc="record.name"/>
                     </NumeroFacturaOriginal>        
-                </Initial>
+                </Inicial>
             </Addenda>
         </template>
         <record id="l10n_mx_edi_addenda_test" model="ir.ui.view">
