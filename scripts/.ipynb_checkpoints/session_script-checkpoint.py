@@ -1,6 +1,6 @@
 from xmlrpc import client
-url = 'https://gandradecrucialsoft-odoo-curso-mainv1-1-2928743.dev.odoo.com'
-db = 'gandradecrucialsoft-odoo-curso-mainv1-1-2928743'
+url = 'https://gandradecrucialsoft-odoo-curso-mainv1-1-2933962.dev.odoo.com'
+db = 'gandradecrucialsoft-odoo-curso-mainv1-1-2933962'
 username = 'gandrade@crucialsoft.com.mx'
 password = 'admin'
 
