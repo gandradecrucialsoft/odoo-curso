@@ -1,7 +1,7 @@
 from xmlrpc import client
-url = 'https://gandradecrucialsoft-odoo-curso-mainv1-1-2916418.dev.odoo.com'
-db = 'gandradecrucialsoft-odoo-curso-mainv1-1-2916418'
-username = 'admin'
+url = 'https://gandradecrucialsoft-odoo-curso-mainv1-1-2928743.dev.odoo.com'
+db = 'gandradecrucialsoft-odoo-curso-mainv1-1-2928743'
+username = 'gandrade@crucialsoft.com.mx'
 password = 'admin'
 
 common = client.ServerProxy("{}/xmlrpc/common".format(url))
@@ -15,7 +15,7 @@ models = client.ServerProxy("{}/xmlrpc/2/object".format(url))
 model_access = models.execute_kw(db,uid,password,'sale.order','check_access_rights',['write'],{'raise_exception':False})
 print(model_access)
 
-draft_quotes = models.execute_kw(db,uid,password,'sale.order','search',[[['state','in','draft']]])
+draft_quotes = models.execute_kw(db,uid,password,'sale.order','search',[[['state','=','draft']]])
 print(draft_quotes)
 
 if_confirmed = models.execute_kw(db,uid,password,'sale.order','action_confirm',[draft_quotes])
